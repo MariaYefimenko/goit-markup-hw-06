@@ -18,6 +18,8 @@ h6 {
 
 img {
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 ul,
@@ -30,6 +32,7 @@ ol {
 
 .container {
     width: 100%;
+    max-width: 320px;
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
@@ -83,13 +86,12 @@ ol {
 .header-container {
     display: flex;
     align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px 0;
 }
 
 @media screen and (min-width: 768px) {
 .header-container {
-    padding: 0;
+    padding: 0 16px;
 }
 }
 
@@ -127,7 +129,6 @@ address {
 }
 
 
-
 .header-logo-color {
     color: #2e2f42;
 }
@@ -141,14 +142,12 @@ address {
 @media screen and (min-width: 768px) {
     .navigation-sectors {
     display: flex;
-    margin-right: 121px;
     }
 }
 
 @media screen and (min-width: 1158px) {
     .navigation-sectors {
     display: flex;
-    margin-right: 332px;
     }
 }
 
@@ -284,6 +283,7 @@ li .address:focus {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    gap: 48px;
 }
 
 .mob-menu.is-open {
@@ -329,9 +329,9 @@ li .address:focus {
 }
 
 
-
 .mob-menu-list {
     list-style: none;
+    margin-bottom: auto;
 }
 
 .mob-menu-item:not(:last-child) {
@@ -431,7 +431,7 @@ li .address:focus {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 188px 0;
+    padding: 72px 0;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -634,20 +634,18 @@ li .address:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin: 0 auto;
-    max-width: 288px;
+    
 }
 
 @media screen and (min-width: 768px) {
     .second-section-text {
         font-weight: 500;
-        max-width: 356px;
     }
 }
 
 @media screen and (min-width: 1158px) {
     .second-section-text {
         font-weight: 400;
-        max-width: 356px;
     }
 }
 /*======================SECTION TEAM==============================*/
@@ -848,7 +846,7 @@ li .address:focus {
 
 .footer{
     background-color: #2E2F42;
-    padding: 100px 0;
+    padding: 96px 0;
 }
 
 .footer-all-wrapper {
@@ -856,9 +854,6 @@ li .address:focus {
     flex-direction: column;
     gap: 72px;
     text-align: center;
-    align-content: center;
-    justify-content: space-between;
-    align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -866,7 +861,6 @@ li .address:focus {
         flex-direction: row;
         flex-wrap: wrap;
         text-align: left;
-        justify-content: flex-start;
         gap: 72px 24px;
         padding: 0 108px;
     }
@@ -882,18 +876,18 @@ li .address:focus {
 }
 
 .footer-logo-container {
-    width: 100%;
+    width: auto;
 }
 
 @media screen and (min-width: 768px) {
     .footer-logo-container {
     width: 264px;
-    height: 72px;
 }
 }
+
 @media screen and (min-width: 1158px) {
     .footer-logo-container {
-    margin-right: 120px;
+    margin-right: auto;
 }
 }
 
@@ -940,7 +934,7 @@ li .address:focus {
 }
 
 .subscription-area {
-    width: 100%;
+    width: auto;
 }
 
 .footer-text-social {
@@ -959,7 +953,7 @@ li .address:focus {
 
 @media screen and (min-width: 1158px) {
     .footer-social-container {
-        margin-right: 80px;
+        margin-right: auto;
     }
     
 }
